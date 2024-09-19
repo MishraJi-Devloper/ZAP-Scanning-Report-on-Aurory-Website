@@ -6,15 +6,12 @@ This repository contains information about security vulnerabilities discovered o
 
 - [Project Overview](#project-overview)
 - [Vulnerabilities Discovered](#vulnerabilities-discovered)
-  - [Missing Secure or HTTPOnly Cookie Flag](#missing-secure-or-httponly-cookie-flag)
   - [Content Security Policy (CSP) Issues](#content-security-policy-csp-issues)
   - [Cross-Domain JavaScript Source File Inclusion](#cross-domain-javascript-source-file-inclusion)
   - [Strict-Transport-Security (HSTS) Not Set](#strict-transport-security-hsts-not-set)
   - [Information Disclosure](#information-disclosure)
 - [Business Impact](#business-impact)
 - [Remediation Recommendations](#remediation-recommendations)
-- [Proof of Concept (PoC)](#proof-of-concept-poc)
-- [Contact](#contact)
 
 ---
 
@@ -39,7 +36,6 @@ Aurory is a play-to-earn, Japanese role-playing game built on the Solana blockch
 **Impact**: Attackers can access sensitive cookie data, compromising user sessions.  
 **Remediation**: Ensure that all session cookies include the `Secure` and `HTTPOnly` attributes.  
 
-More details can be found in [Missing Secure or HTTPOnly Cookie Flag](#missing-secure-or-httponly-cookie-flag).
 
 ### 2. Content Security Policy (CSP) Issues
 
